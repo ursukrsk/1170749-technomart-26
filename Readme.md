@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Igor Ursu](https://up.htmlacademy.ru/htmlcss/26/user/1170749).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Ведмедев](https://htmlacademy.ru/profile/id130100).
 
 ---
 
