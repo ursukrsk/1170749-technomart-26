@@ -7,23 +7,28 @@
   </head>
   <body>
     <header>
-      <div>
-        <a><img src="img/Техномарт.png" alt="Логотип Техномарт"></a>
+      <div> <!--ЛОГОТИП-->
+        <a href="#"><span>Техномарт</span></a>
       </div>
       <div>
-        <img src="img/icon-search.svg" alt=""><!--Поиск-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <img src="img/icon-search.svg" alt="">
+          <label for="search" aria-label="Поле поиска"></label>
+          <input type="search" name="search" id="search" placeholder="Поиск:">
+        </form>
       </div>
       <div>
         <img src="img/icon-bookmark.svg" alt="">
         <a href="#">Закладки:0</a>
       </div>
       <div>
-         <img src="img/cart-icon.svg" alt="">
+        <img src="img/cart-icon.svg" alt="">
         <a href="#">Корзина:0</a>
       </div>
       <div>
         <a href="#">Оформить заказ</a>
       </div>
+
       <div>
         <p>Интернет-магазин <br>строительных материалов <br>и инструментов для ремонта</p>
       </div>
@@ -46,12 +51,12 @@
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-       
       </nav>
     </header>
     <main>
 
     <section>
+      <h1 class="visually-hidden">Компания "Техномарт"</h1>
       <div>
         <h2>Материалы</h2>
         <a href="#">На любой вкус</a>
@@ -87,10 +92,9 @@
         <img src="img/icon-5.svg" alt="Иконка">
       </div>
     </section>
-
     <section>
       <h2>Популяоные товары</h2>
-      <a href="#">Все популярные товары</a>
+        <a href="#">Все популярные товары</a>
       <ul>
           <li>
             <h3>
@@ -101,19 +105,17 @@
               <a href="#"><img src="img/Perforator_1.png" alt="Перфоратор BOSH"></a></p>
             <p>32500 Р.</p>
             <p><a href="#">25500 Р.</a></p>
-          </li>
-          
+          </li> 
           <li>
             <h3>
               <a href="#">
-                <span>Перфоратор BOSH</span><br><span>BFG 3000</span></a>
+              <span>Перфоратор BOSH</span><br><span>BFG 3000</span></a>
             </h3>
             <p>
               <a href="#"><img src="img/Perforator_2.png" alt="Перфоратор BOSH"></a></p>
             <p>22500 Р.</p>
             <p><a href="#">15500 Р.</a></p>
           </li>
-          
           <li>
             <h3>
               <a href="#">
@@ -124,7 +126,6 @@
             <p>30500 Р.</p>
             <p><a href="#">25500 Р.</a></p>
           </li>
-          
           <li>
             <h3>
               <a href="#">
@@ -137,7 +138,6 @@
           </li>
         </ul>
     </section>
-
     <section>
       <h2>Популяоные производители</h2>
       <a href="#">Все производители</a>
@@ -152,10 +152,11 @@
         <li><img src="img/Metabo.png" alt="Логотип"></li>
       </ul>
     </section>
-
     <section>
       <h2>Сервисы</h2>
       <p>Хороший интернет-магазин отличается от плохого не только ценами! <br> Мы стараемся изо всех сил, чтобы сделать ваши покупеи приятными.</p>
+    </section>
+    <section>
       <div>
         <a href="#">Доставка</a>
         <a href="#">Гарантия</a>
@@ -171,7 +172,6 @@
         <img src="img/Layer_131.png" alt="">
       </div>
     </section>
-
       <section>
         <h2>Компания "Техномарт"</h2>
         <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и <br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -187,26 +187,26 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать свой товар сами, <br> заехав в наш офис:</p>
         <img src="img/Слой_5.png" alt="Карта">
-        <button type="butoon">Заблудились? Напишите нам!</button>
+        <button class="butoon">Заблудились? Напишите нам!</button>
       </section>
     </main>
-
-
     <footer>
       <div>
-        <img src="img/Техномарт.png" alt=Логотип>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
-      </div>
-      <div>
-        <nav>
+        <div> <!--ЛОГОТИП-->
+          <a href="#"><span>Техномарт</span></a>
+        </div>
+      <nav>
         <ul>
           <li><a href="index.html">Компания</a></li>
           <li><a href="#">Новости</a></li>
-          <li><a href="item.html">Каталог</a></li>
+          <li><a href="#">Каталог</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         </nav>
+      </div>
+      <div>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         <nav>
         <ul>
           <li><a href="#">Материалы</a></li>
@@ -217,19 +217,41 @@
         </ul>
         </nav>
       </div>
+      <div> 
       <p>2010-2019 Компания "Техномарт" <br> © Все права защищены</p>
-      <div>
         <ul>
           <li><a href="#"><img src="img/vk-icon.png" alt="Вконтакте"></a></li>
           <li><a href="#"><img src="img/fb-icon.png" alt="Фейсбук"></a></li>
           <li><a href="#"><img src="img/insta-icon.png" alt="Инстаграм"></a></li>
         </ul>
+        <p>Обратная связь:</p>
+        <a href="#">mail@htmlacademg.ru</a>
+        <p>Разработано -</p>
+        <a href="#">htmlacademg.ru</a>
       </div>
-      <p>Обратная связь:</p>
-      <a href="#">mail@htmlacademg.ru</a>
-      <p>Разработано -</p>
-      <a href="#">htmlacademg.ru</a>
     </footer>
+
+
+    <section><!--форма НАПИСАТЬ НАМ -->
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="your_name">Ваше имя:</label>
+        <input type="text" name="name" id="your_name" placeholder="Имя Фамилия">
+        <label for="your_email">Ваш e-mail:</label>
+        <input type="text" name="email" id="your_email" placeholder="email@example.com">
+        <label for="your_text">Текст письма:</label>
+        <textarea name="text" id="your_text" placeholder="В свободной форме"></textarea>
+        <input type="submit">
+      </form>
+    </section>
+
+    <section><!--Всплывающая карта проезда-->
+      <h2>Как до нас добраться</h2>
+      <p>
+        <img src="img/layer_4.png" width="940" height="447" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button type="button"><img src="img/form-2.svg" alt="Закрыть"></button>
+    </section>
   </body>
 </html>
 
