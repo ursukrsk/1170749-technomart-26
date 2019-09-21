@@ -1,103 +1,105 @@
-
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Компания "Техномарт"</title>
-  </head>
-  <body>
-    <header>
-      <div> <!--логотип техномарт-->
-        <a href="#"><span>Техномарт</span></a>
+<head>
+  <meta charset="utf-8">
+  <title>Компания "Техномарт"</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-top">
+     <div class="header-logo"> <!--логотип техномарт-->
+       <a href="#"><img src="img/logo.png" alt="Логотип" width="109" height="19"></a>
+     </div>
+     <div>
+       <form action="https://echo.htmlacademy.ru" method="post">
+         <img src="img/icon-search.svg" alt="">
+         <label for="search" aria-label="Поле поиска"></label>
+         <input type="search" name="search" id="search" placeholder="Поиск:">
+       </form>
+     </div>
+     <div>
+       <img src="img/icon-bookmark.svg" alt="">
+       <a href="#">Закладки:0</a>
+     </div>
+     <div>
+       <img src="img/cart-icon.svg" alt="">
+       <a href="#">Корзина:0</a>
+     </div>
+     <div class="order">
+       <a href="#">Оформить заказ</a>
+     </div>
+    </div>
+    <div class="info-header">
+      <p>Интернет-магазин <br>строительных материалов <br>и инструментов для ремонта</p>
+    </div>
+    <div class="contacts-1">
+      <div class="contacts-2"><img src="img/icon-phone.svg" width="19" height="19" alt="">
+      <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       </div>
-      <div>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <img src="img/icon-search.svg" alt="">
-          <label for="search" aria-label="Поле поиска"></label>
-          <input type="search" name="search" id="search" placeholder="Поиск:">
-        </form>
-      </div>
-      <div>
-        <img src="img/icon-bookmark.svg" alt="">
-        <a href="#">Закладки:0</a>
-      </div>
-      <div>
-        <img src="img/cart-icon.svg" alt="">
-        <a href="#">Корзина:0</a>
-      </div>
-      <div>
-        <a href="#">Оформить заказ</a>
-      </div>
-
-      <div>
-        <p>Интернет-магазин <br>строительных материалов <br>и инструментов для ремонта</p>
-      </div>
-      <div>
-        <img src="img/icon-phone.svg" width="19" height="19" alt="">
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      </div>
-      <div>
-        <button type="button"><img src="img/icon-login.svg" width="17" height="20" alt="">Войти</button>
-        <button type="button">Регистрация</button>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Компания</a></li>
-          <li><a href="item.html">Каталог</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
+      <p class="address-1">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    </div>
+    <div>
+      <button class="button-сabinet" type="button"><img src="img/icon-login.svg" width="17" height="20" alt="">Войти</button>
+      <button class="button-registration" type="button">Регистрация</button>
+    </div>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#">Компания</a></li>
+        <li><a href="item.html">Каталог</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Спецпредложения</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
     <main>
-
-    <section>
-      <h1 class="visually-hidden">Компания "Техномарт"</h1>
-      <div>
-        <h2>Материалы</h2>
-        <a href="#">На любой вкус</a>
-        <img src="img/icon-1.svg" alt="Иконка">
-        <img src="img/new_flag.png" alt="new">
-      </div>
-      <div>
-        <h2>Инструмент</h2>
-        <a href="#">На все случаи</a>
-        <img src="img/icon-2.svg" alt="Иконка">
-      </div>
-      <div>
-        <h2>Техника</h2>
-        <a href="#">Для стройки</a>
-        <img src="img/icon-3.svg" alt="Иконка">
-
-      </div> <!--Слайдер-->
-      <div>
-        <div><img src="img/Layer_100.jpg" alt="Слайд_1"></div>
-        <div><img src="img/Layer_99.jpg" alt="Слайд_2"></div>
-        <div><button style="button"><img src="img/icon-left.svg" alt=""></button></div>
-        <div><button style="button"><img src="img/icon-right.svg" alt=""></button></div>
-      </div>
-      <div>
-        <h2>Дрели</h2>
-        <p>Соседям на радость</p>
-        <button class="button">Назад</button>
-        <button class="button">Вперед</button>
-        <a href="#">Открыть каталог</a>
-      </div>
-      <div>
-        <h2>Скидка 50%</h2>
-        <a href="#">На 350 товаров</a>
-        <img src="img/icon-4.svg" alt="Иконка">
-      </div>
-      <div>
-        <h2>Доставка</h2>
-        <a href="#">Бесплатно</a>
-        <img src="img/icon-5.svg" alt="Иконка">
-      </div>
-    </section>
+      <section>
+        <h1 class="visually-hidden">Компания "Техномарт"</h1>
+        <div>
+          <h2>Материалы</h2>
+          <a href="#">На любой вкус</a>
+          <img src="img/icon-1.svg" alt="Иконка">
+          <img src="img/new_flag.png" alt="new">
+        </div>
+        <div>
+          <h2>Инструмент</h2>
+          <a href="#">На все случаи</a>
+          <img src="img/icon-2.svg" alt="Иконка">
+        </div>
+        <div>
+          <h2>Техника</h2>
+          <a href="#">Для стройки</a>
+          <img src="img/icon-3.svg" alt="Иконка">
+        </div> <!--Слайдер-->
+        <div>
+          <div><img src="img/Layer_100.jpg" alt="Слайд_1"></div>
+          <div><img src="img/Layer_99.jpg" alt="Слайд_2"></div>
+          <div><button style="button"><img src="img/icon-left.svg" alt=""></button></div>
+          <div><button style="button"><img src="img/icon-right.svg" alt=""></button></div>
+        </div>
+        <div>
+          <h2>Дрели</h2>
+          <p>Соседям на радость</p>
+          <button class="button">Назад</button>
+          <button class="button">Вперед</button>
+          <a href="#">Открыть каталог</a>
+        </div>
+        <div>
+          <h2>Скидка 50%</h2>
+          <a href="#">На 350 товаров</a>
+          <img src="img/icon-4.svg" alt="Иконка">
+        </div>
+        <div>
+          <h2>Доставка</h2>
+          <a href="#">Бесплатно</a>
+          <img src="img/icon-5.svg" alt="Иконка">
+        </div>
+      </section>
     <section>
       <h2>Популяоные товары</h2>
         <a href="#">Все популярные товары</a>
@@ -236,7 +238,6 @@
         <a href="#">htmlacademg.ru</a>
       </div>
     </footer>
-
     <section><!--форма НАПИСАТЬ НАМ -->
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -249,7 +250,6 @@
         <input type="submit">
       </form>
     </section>
-
     <section><!--Всплывающая карта проезда-->
       <h2>Как до нас добраться</h2>
       <p>
