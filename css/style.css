@@ -1,298 +1,574 @@
-body {
+body,html {
+  min-width: 960px;
   margin: 0;
   padding: 0;
-
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 13px;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: 400;
-  color: #000000;
-
-  background-color: #ffffff;
+  font-style: normal;
+  font-family: "PT Sans","Arial",sans-serif;
+  color: #000;
+  background: #fff;
 }
 
-a {
-  text-decoration: none;
+input,p,textarea {
+  padding: 0;
+  margin: 0;
 }
 
-/*==================ШАПКА===================*/
-/*Основной блок.*/
-.main-header {
-  font-family: 'Cuprum', sans-serif;
-  background-color: #f4f7f9;
+h1,h2 {
+  font-family: "Cuprum","Arial",sans-serif;
 }
 
-.main-header a {
-  color: #ffffff;
-  font-size: 17px;
-  line-height: 18px;
+h1,h2,h3 {
+  font-weight: 700;
+  font-style: normal;
 }
 
-.info-header {
-  color: #ee3643;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 23px;
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 30px;
+  color: #fff;
 }
 
-.contacts-2 {
-  width: 270px;
-  height: 45px;
-  border: 3px solid #ffffff;
+h2,h3 {
+  color: #000;
 }
 
-.contacts-2 a {
-  color: #ee3643;
-  font-size: 21px;
-  line-height: 21px;
-}
-
-.address-1 {
-  color: #32425c;
-  font-size: 14px;
+h2 {
+  font-size: 30px;
   line-height: 24px;
 }
 
-.order {
-  background-color: #63a63e;
+h2,h3,ul {
+  margin: 0;
+  padding: 0;
 }
 
-.button,
-.button {
-  font-size: 21px;
-  text-align: center;
-  vertical-align: middle;
-  color: #000000;
-  background-color: #ffffff;
+h3 {
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "PT Sans","Arial",sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-header {
+  min-height: 320px;
+  margin-bottom: 59px;
+}
+
+.catalog-page .main-header {
+  margin-bottom: 18px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.header-up {
+  min-height: 42px;
+  background: #293449;
+} 
+
+.logo {
+  float: left;
+}
+
+.logo a {
+  display: inline-block;
+  width: 165px;
+  padding: 11px 0 7px 55px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
+}
+
+.logo a:hover {
+  background: #ca2c37;
+}
+
+.logo a:active {
+  background: #ba2732;
+}
+
+.header-up-wrapper,.search {
+  float: left;
+  color: #fff;
+  background: #293449;
+}
+
+.header-up-wrapper {
+  max-width: 720px;
+}
+.search {
+  position: relative;
+  width: 270px;
+}
+
+input[type=search] {
+  width: 100%;
+  padding: 12px 0 12px 49px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+  color: #fff;
+  background-color: #293449;
   border: none;
   cursor: pointer;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
+label.search-label {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  z-index: 20;
+  width: 20px;
+  height: 20px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -106px -1px;
+  cursor: pointer;
+}
+input[type=search]:hover {
+  background: #212a3a;
+  border: none;
+}
+
+input[type=search]:focus {
+  color: #000;
+  background: #fff;
+  outline: none;
+}
+
+input[type=search]:hover+label {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -106px -51px;
+}
+
+input[type=search]:focus+label {
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -207px -151px;
+}
+
+.bookmarks {
+  position: relative;
+  width: 105px;
+  float: left;
+  padding: 12px 0 12px 45px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background-color: #293449;
+}
+
+.bookmarks:hover {
+  background: #212a3a;
+}
+
+.bookmarks:active {
+  background: #161d29;
+}
+
+.bookmarks::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -53px 1px;
+}
+
+.bookmarks:hover:before {
+  background-position: -53px -49px;
+}
+
+.bookmarks:active:before {
+  background-position: -54px -99px;
+}
+
+.basket {
+  position: relative;
+  float: left;
+  width: 100px;
+  padding: 12px 0 12px 50px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+  background-color: #293449;
+}
+
+.full-basket {
+  background: #ee3643;
+}
+
+.basket:hover {
+  background: #212a3a;
+}
+
+.basket:active {
+  background: #161d29;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -8px 1px;
+}
+.basket:hover:before {
+  background-position: -7px -49px;
+}
+
+.basket:active:before {
+  background-position: -8px -99px;
+}
+
+.ordering {
+  float: left;
+  padding: 12px 22px 12px 20px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background: #63a63e;
+}
+
+.ordering:hover {
+  background: #5fbb2d;
+}
+
+.ordering:active {
+  background: #518534;
+}
+
+.header-down {
+  min-height: 278px;
+  color: #000;
+  background-color: #f1f5f7;
+}
+
+.title {
+  width: 247px;
+  float: left;
+  margin: 49px 0 40px 52px;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Cuprum","Arial",sans-serif;
+  color: #ef5c67;
+}
+
+.data {
+  float: left;
+  width: 340px;
+}
+
+.address,
+.telephone {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+}
+
+.telephone {
+  position: relative;
+  margin: 46px 50px 4px 22px;
+  border: 3px solid #fff;
+  width: 264px;
+  font-size: 21px;
+  line-height: 18px;
+}
+
+.telephone p {
+  padding: 10px 10px 11px 71px;
+  color: #e9292a;
+}
+
+.telephone::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -201px -202px;
+}
+
+.address {
+  width: 310px;
+  margin-left: 31px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.login,
+.user-block {
+  float:left;
+}
+
+.login {
+  position: relative;
+  margin: 47px 10px 0 21px;
+  padding: 12px 26px 14px 46px;
+  font-family: "Cuprum","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+}
+
+.login:hover {
   color: #ee3643;
 }
 
-/*Верхняя часть*/
-.header-top {
-  color: #ffffff;
-  background-color: #293448;
+.login:active {
+  color: #cacaca;
 }
 
-.header-logo {
-  background-color: #ee3643;
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+.login::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -304px -98px;
 }
 
-input {
-  font-family: Cuprum;
-  font-size: 17px;
+.login:hover::before {
+  background-position: -201px -98px;
+}
+
+.login:active::before {
+  background-position: -254px -98px;
+}
+
+.registration {
+  float: right;
+  padding: 12px 25px 14px 23px;
+  margin-top: 47px;
+  font-size: 21px;
   line-height: 18px;
-  background: inherit;
-  border: none;
-} 
-
-input:focus {
-  background-color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
 }
 
-/*Нижняя часть. Меню*/
+.registration:hover {
+  color: #ee3643;
+}
+
+.loged:active,
+.registration:active {
+  color: #cacaca;
+}
+
+.loged {
+  position: relative;
+  float: left;
+  padding: 12px 65px 14px 46px;
+  margin: 47px 0 0 3px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 18px;
+  font-family: "Cuprum","Arial",sans-serif;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+}
+
+.loged::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -303px -46px;
+}
+
+.loged:hover:before {
+  background-position: -201px -49px;
+}
+
+.loged:active:before {
+  background-position: -251px -44px;
+}
+
+.loged::after {
+  content: "";position:absolute;
+  top: 10px;
+  left: 268px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -306px 2px;
+}
+
+.loged:hover:after {
+  background-position: -205px 3px;
+}
+
+.loged:active:after {
+  background-position: -253px 3px;
+}
+
+.information {
+  float: left;
+  margin-top: 8px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.my-orders {
+  display: inline-block;
+  padding-left: 19px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+  color: #32425c;
+  background: #f2f6f8;
+}
+
+.my-orders:hover {
+  color: #ef4652;
+}
+
+.my-orders:active {
+  color: #c5cad0;
+}
+
+.cabinet,
+.point {
+  display: inline-block;
+}
+
+.point {
+  width: 5px;
+  height: 5px;
+  margin-left: 15px;
+  margin-bottom: 2px;
+  background: #32425c;
+  border-radius: 50px;
+}
+
+.cabinet {
+  position: relative;
+  padding-left: 12px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Cuprum","Arial",sans-serif;
+  background: #f2f6f8;
+  color: #32425c;
+}
+
+.cabinet:hover {
+  color: #ef4652;
+}
+
+.cabinet:active {
+  color: #c5cad0;
+}
+
 .main-navigation {
+  float: left;
+  width: 100%;
+  margin-bottom: 60px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
   background-color: #32425c;
-  box-shadow: inset 0 -5px 0 #293449;
+  border-bottom: 3px solid #293449;
 }
 
-.site-navigation {
-  list-style: none;
+.main-navigation li {
+  display: inline-block;
 }
 
-.main-navigation a,
-.site-navigation a {
-  color: #ffffff;
+.main-navigation a {
+  display: block;
+  padding: 20px 31px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 17px;
+  font-family: "Cuprum","Arial",sans-serif;
+  text-decoration: none;
+  color: #fff;
 }
 
 .main-navigation a:hover,
-.main-navigation a:focus,
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background-color: #293449;
+.service-toggle label:hover {
+  background: #293449;
 }
 
-.main-navigation a:active,
-.site-navigation a:active {
-  color: #ffffff;
-  opacity: 0.5;
-  background-color: #1d2739;
+.main-navigation a:active {
+  background: #1d2739;
 }
 
-/*=========================================*/
-
-/*========Секция. Компания техномарт=======*/
-.info-company h2 {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-.list-delivery {
-  font-size: 18px;
-  line-height: 20px;
-}
-
-.info-company p {
-  font-family: "PT Sans";
-  font-size: 13px;
-  line-height: 24px;
-}
-
-.list-delivery {
-  list-style: none;
-}
-
-.list-delivery:before {
-  content: "";
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: #ee3643;
-}
-
-.info-company a {
-  font-family: Cuprum;
-  padding: 14px 41px 14px 41px;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 18px;
-  border-radius: 2px;
-  text-align: center;
-  vertical-align: middle;
-
-  background-color: #ee3643;
-  text-transform: uppercase;
-}
-
-/*========Секция. Контакты с картой========*/
-
-.info-maps h2 {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-.list-maps {
-  font-size: 18px;
-  line-height: 20px;
-}
-
-.info-maps p {
-  font-family: "PT Sans";
-  font-size: 13px;
-  line-height: 24px;
-}
-
-.button-maps {
-  font-family: Cuprum;
-  padding: 14px 59px 14px 63px;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 18px;
-  border-radius: 2px;
-  border: none;
-  text-align: center;
-  vertical-align: middle;
-
-  background-color: #ee3643;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-/*==================Футер==================*/
-footer {
-  color: #f3f7f9;
-  font-size: 18px;
-  line-height: 24px;
-  background-color: #32425c;
-}
-
-.footer-button {
-  color: #ffffff;
-  font-size: 16px;
-  background-color: #293449;
-}
-
-.footer-logo {
-  color: #ffffff;
-  background-color: #293448;
-}
-
-.footer-logo {
-  background-color: #ee3643;
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
-}
-
-.footer-navigation-top {
-  list-style: none;
-}
-
-.footer-navigation-top a {
-  color: #ffffff;
-}
-
-.footer-navigation-top a:hover,
-.footer-navigation-top a:focus {
-  text-decoration: underline;
-}
-
-.footer-navigation-top a:active {
-  color: #ffffff;
-  opacity: 0.5;
-}
-
-.footer-navigation-button {
-  list-style: none;
-}
-
-.footer-navigation-button a {
-  color: #ffda96;
-}
-
-.footer-navigation-button a:hover,
-.footer-navigation-button a:focus {
-  text-decoration: underline;
-}
-
-.footer-navigation-button a:active {
-  color: #ffda96;
-  opacity: 0.5;
-}
-
-.social-icon li {
-  list-style: none;
-} 
-
-.blok-fon {
-  margin: 3px;
-  text-align: center;
-  vertical-align: middle;
-  width: 42px;
-  height: 42px;
-  border-radius: 21px;
-  background-color: #212a3a;
-}
-
-.blok-fon li:hover,
-.blok-fon li:focus {
-  background-color: #ee3643;
-}
-
-.info-footer a {
-  font-size: 16px;
-  color: #ffda96;
-}
-
-.info-footer a:hover,
-.info-footer a:focus {
-  text-decoration: underline;
-}
-
-.info-footer a:active {
-  color: #ee3643;
+.block-1 {
+  margin-bottom: 65px;
+  background: #fff;
+  color: #000;
 }
