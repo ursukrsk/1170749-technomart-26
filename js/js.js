@@ -28,10 +28,10 @@ for(var i=0;i<linkbuy.length;i++)linkbuy[i].addEventListener("click",function(a)
 	a.preventDefault(),buy.classList.add("modal-content-show")});
 
 closebuy.addEventListener("click",function(a){
-	a.preventDefault(),buy.classList.remove("modal-content-show")})
+    a.preventDefault(),buy.classList.remove("modal-content-show")})
 
 ,window.addEventListener("keydown",function(a){
-	27===a.keyCode&&buy.classList.contains("modal-content-show")&&buy.classList.remove("modal-content-show")})
+    27===a.keyCode&&buy.classList.contains("modal-content-show")&&buy.classList.remove("modal-content-show")})
 
 ,linkmap.addEventListener("click",function(a){a.preventDefault(),map.classList.add("modal-content-show-map")})
 
