@@ -84,7 +84,7 @@ ul {
 }
 
 .header-up {
-  min-height: 42px;
+  max-height: 42px;
   background: #293449;
 } 
 
@@ -120,7 +120,7 @@ ul {
 .header-up-wrapper,.search {
   float: left;
   color: #fff;
-  background: #293449;
+  /*background: #293449;*/
 }
 
 .header-up-wrapper {
@@ -133,7 +133,7 @@ ul {
 
 input[type=search] {
   width: 100%;
-  padding: 12px 0 12px 49px;
+  padding: 12px 0 10px 49px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -1191,7 +1191,7 @@ input[type=search]:focus+label {
   margin-right: 0
 }
 
-.banner-firms a > img {
+.banner-firms a>img {
   position: relative;
   left: 50%;
   top: 50%;
@@ -1204,14 +1204,14 @@ input[type=search]:focus+label {
   background-color: #f2f6f8;
 }
 
-.service > h2,
-.service > p {
+.service>h2,
+.service>p {
   font-weight: 400;
   font-style: normal;
   line-height: 24px;
 }
 
-.service > h2 {
+.service>h2 {
   padding: 68px 0 29px;
   text-transform: uppercase;
   color: #000;
@@ -1220,7 +1220,7 @@ input[type=search]:focus+label {
   font-family: "Cuprum","Arial",sans-serif;
 }
 
-.service > p {
+.service>p {
   padding-bottom: 64px;
   font-size: 13px;
   font-family: "PT Sans","Arial",sans-serif;
@@ -1334,14 +1334,14 @@ p.additional-text {
 .delivery,
 .garantia {
   background-image: url(../img/bg-delivery.png);
-  background-position: 100% 100%;
+  background-position: 100% 124%;
   background-repeat: no-repeat;
 }
 
 .credit,
 .garantia {
   background-image: url(../img/bg-guarantee.png);
-  background-position: 100% 100%;
+  background-position: 100% 25%;
 
 }
 
@@ -1351,7 +1351,7 @@ p.additional-text {
 
 .credit {
   background-image: url(../img/bg-credit.png);
-  background-position: 100% 100%;
+  background-position: 100% 28%;
 } 
 
 .service-touch-button {
@@ -1587,7 +1587,7 @@ p.additional-text {
 
 .breadcrumbs>a {
   position: relative;
-  margin-right: 8px;
+  margin-right: 38px;
   font-weight: 400;
   font-style: normal;
   font-size: 13px;
