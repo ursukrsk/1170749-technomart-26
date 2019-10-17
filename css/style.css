@@ -1058,7 +1058,7 @@ input[type=search]:focus+label {
   overflow: hidden;
 }
 
-.drill-image>img {
+.drill-image > img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1100,7 +1100,7 @@ input[type=search]:focus+label {
   color: #999;
 }
 
-.drill-description+a.btn {
+.drill-description + a.btn {
   margin-top: 28px;
 }
 
@@ -1140,7 +1140,7 @@ input[type=search]:focus+label {
   background-color: #f7f3ec;
 }
 
-.popular-firms .btn,.popular-firms>span {
+.popular-firms .btn,.popular-firms > span {
   float: left;
   margin: 30px 0 29px 24px;
   font-weight: 400;
@@ -1169,7 +1169,7 @@ input[type=search]:focus+label {
   line-height: 0;
 }
 
-.banner-firms>a {
+.banner-firms > a {
   display: inline-block;
   width: 218px;
   height: 143px;
@@ -1191,7 +1191,7 @@ input[type=search]:focus+label {
   margin-right: 0
 }
 
-.banner-firms a>img {
+.banner-firms a > img {
   position: relative;
   left: 50%;
   top: 50%;
@@ -1204,14 +1204,14 @@ input[type=search]:focus+label {
   background-color: #f2f6f8;
 }
 
-.service>h2,
-.service>p {
+.service > h2,
+.service > p {
   font-weight: 400;
   font-style: normal;
   line-height: 24px;
 }
 
-.service>h2 {
+.service > h2 {
   padding: 68px 0 29px;
   text-transform: uppercase;
   color: #000;
@@ -1220,7 +1220,7 @@ input[type=search]:focus+label {
   font-family: "Cuprum","Arial",sans-serif;
 }
 
-.service>p {
+.service > p {
   padding-bottom: 64px;
   font-size: 13px;
   font-family: "PT Sans","Arial",sans-serif;
@@ -1334,14 +1334,14 @@ p.additional-text {
 .delivery,
 .garantia {
   background-image: url(../img/bg-delivery.png);
-  background-position: 100% 122%;
+  background-position: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .credit,
 .garantia {
   background-image: url(../img/bg-guarantee.png);
-  background-position: 103% 25%;
+  background-position: 100% 100%;
 
 }
 
@@ -1351,7 +1351,7 @@ p.additional-text {
 
 .credit {
   background-image: url(../img/bg-credit.png);
-  background-position: 111% 28%;
+  background-position: 100% 100%;
 } 
 
 .service-touch-button {
